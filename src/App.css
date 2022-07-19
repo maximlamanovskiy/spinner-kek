@@ -1,16 +1,52 @@
 .App {
-  text-align: center;
+  margin-top: 260px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 400px;
+  width: 400px;
   pointer-events: none;
+  animation: App-logo-spin infinite 5s linear;
+  /* transform-origin: 210px 210px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root > div > svg > path:nth-child(1), 
+#root > div > svg > path:nth-child(2), 
+#root > div > svg > path:nth-child(3) {
+  animation: App-logo-spin infinite 1s linear;
+}
+
+#root > div > svg > path:nth-child(1) {
+  transform-origin: 29px 13px;
+}
+
+#root > div > svg > path:nth-child(2) {
+  transform-origin: 43px 39px;
+}
+
+#root > div > svg > path:nth-child(3) {
+  transform-origin: 13px 39px;
+}
+
+#root > div > svg > path:nth-child(4) {
+  animation: App-logo-spin infinite 1s linear;
+  transform-origin: 50% 50%;
+}
+
+#root > div > svg > path:nth-child(5) {
+  animation: App-logo-spin infinite 1s linear;
+  animation-delay: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+#root > div > svg > path:nth-child(6) {
+  animation: App-logo-spin infinite 1s linear;
+  animation-delay: 0.4s;
+  transform-origin: 50% 50%;
 }
 
 .App-header {
